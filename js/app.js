@@ -7,7 +7,7 @@ alert('Hi'+ '  '+'' +Name+ '  ' +'answer the following question  by Yes or no pl
 
 let continents;
 continents=prompt('Is the number of continents of the world 7?') 
-if  (continents.toLocaleLowerCase()==='yes'){
+if  (continents.toLocaleLowerCase()==='yes'||'y'){
     alert('It is Correct');
 }else {
     alert('It is not Correct');
@@ -15,7 +15,7 @@ if  (continents.toLocaleLowerCase()==='yes'){
 
 let num ;
 num=prompt('The number of parts of the Quran is 30?')
-if  (num.toLocaleLowerCase()==='yes'){
+if  (num.toLocaleLowerCase()==='yes'||'y'){
     alert('It is Correct');
 }else {
     alert('It is not Correct');
@@ -25,9 +25,11 @@ let houer=prompt('The number of hours of the day is 30');
 
 switch(houer.toUpperCase()){
     case 'NO':
+    case 'N':
         alert('It is Correct');
         break;
     case 'YES':
+    case 'Y':
         alert('It is not Correct');
         break;
     default:
@@ -39,9 +41,11 @@ let week=prompt('The number of days of the week is 5');
 
 switch(week.toUpperCase()){
     case 'NO':
+        case 'N':
         alert('It is Correct');
         break;
     case 'YES':
+        case 'Y':
         alert('It is not Correct');
         break;
     default:
@@ -52,9 +56,11 @@ let sky=prompt('The Sky color is blue?');
 
 switch(sky.toUpperCase()){
     case 'YES':
+        case 'Y':
         alert('It is Correct');
         break;
     case 'NO':
+        case 'N':
         alert('It is not Correct');
         break;
     default:
