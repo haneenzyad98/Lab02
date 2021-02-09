@@ -89,16 +89,42 @@ if(q6==5){
     }alert('the correct answer is 5')
 }
 
-let Drink =['Coffee','Tea','CocaCola', 'water'];
-let q7= prompt('Guess the best drink for me?');
-if (q7==[1]){
-    score++;
-    alert('it is correct')
-    console.log(score);
-}else{
-    for(let i=0;(i<4)&&(q7!='Tea');i++ ){
-        q7=prompt('Guess the best drink for me?')
-    }alert('the correct answer is Tea')
-}
+// let Drink =['coffee','tea','cocacola', 'water'];
+// for(let x=0;x<4;x++){
+
+//     let q7= prompt('Guess the best drink for me?').toLocaleLowerCase;
+
+// for(let j=0;j<Drink.length;j++){
+//     if (q7===Drink[j]){
+//         score++;
+//         alert('it is correct');
+//         break; 
+//     }
+// if(q7===Drink[j]){
+//     break;
+
+// } else{
+//             alert('Your Answer is incorrect, Try again');
+//             q7= prompt('Guess the best drink for me?').toLocaleLowerCase;
+//         }
+//     }
+// }
+
+let Drink =['coffee','tea','cocacola', 'water','coldetea','cacaw'];
+
+    for(var x = 0; x < 6; x++){
+    let userAnswer = prompt('Guess the best drink for me?').toLowerCase();
+        for (var j = 0; j < Drink.length; j++) {
+            if( userAnswer === Drink[j]){
+                alert('Your Answer Is Corrct!!');
+                score++;
+                break ;}
+           }
+        if (userAnswer === Drink[j]){
+            break;}
+            else{
+            alert('Your Answer is incorrect, Try again');}
+    }
+
 console.log(score)
 alert('score is ' + score);
