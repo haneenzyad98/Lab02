@@ -1,7 +1,7 @@
 h1 {
     font-size: 500%;
     text-align: center;
-    color: black;
+    color:white;
     margin: 50;
     padding: 50px;
     font-style: oblique;
@@ -9,19 +9,22 @@ h1 {
 
 .firstone{
     font-size: x-large;
-    color: aliceblue;
+    color: black;
     padding: 20px;
 }
 .all{
     font-size: large;
-    color: aliceblue;
+    color: black;
     padding: 10px;
 }
 body{
-    background-color: black;
+    background-color:gray;
 }
 header{
     margin: 50px;
     height: min-content;
-    background-color: aliceblue;
+    background-color:black;
+}
+h2{
+    font-size: 30px;
 }
