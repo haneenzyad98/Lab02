@@ -7,7 +7,10 @@ age =prompt('How old are you?')
 alert('Hi'+ '  '+'' +Name+ '  ' +'answer the following question  by Yes or no please');
 let score=0;
 let continents;
-continents=prompt('Is the number of continents of the world 7?') 
+
+
+
+function conNumber () {continents=prompt('Is the number of continents of the world 7?') 
 if  (continents.toLocaleLowerCase()==='yes'||continents.toLocaleLowerCase()==='y'){
    score++; 
    alert('It is Correct');
@@ -15,7 +18,8 @@ if  (continents.toLocaleLowerCase()==='yes'||continents.toLocaleLowerCase()==='y
     alert('It is not Correct');
 }else{
     alert('the Correct answer is yes');
-}
+}}
+conNumber();
 
 
  let num=prompt('The number of parts of the Quran is 30?')
