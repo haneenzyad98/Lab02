@@ -50,7 +50,7 @@ switch(houer.toUpperCase()){
 }
 numDay();
 
-let week=prompt('The number of days of the week is 5');
+function numWeek () {let week=prompt('The number of days of the week is 5');
 
 switch(week.toUpperCase()){
     case 'NO':
@@ -64,7 +64,8 @@ switch(week.toUpperCase()){
         break;
     default:
         alert('It is not Correct');
-}
+}}
+numWeek();
 
 let sky=prompt('The Sky color is blue?');
 
