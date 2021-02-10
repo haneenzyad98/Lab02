@@ -22,13 +22,15 @@ if  (continents.toLocaleLowerCase()==='yes'||continents.toLocaleLowerCase()==='y
 conNumber();
 
 
- let num=prompt('The number of parts of the Quran is 30?')
+function quran() {let num=prompt('The number of parts of the Quran is 30?')
 if  (num.toLocaleLowerCase()==='yes'||num.toLocaleLowerCase()==='y'){
     score++;
     alert('It is Correct');}
     else if(num.toLocaleLowerCase()==='no'||num.toLocaleLowerCase()==='n') {
         alert('It is not Correct');
     }
+} 
+quran();
 
 let houer=prompt('The number of hours of the day is 30?');
 
