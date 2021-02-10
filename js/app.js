@@ -67,7 +67,7 @@ switch(week.toUpperCase()){
 }}
 numWeek();
 
-let sky=prompt('The Sky color is blue?');
+function sky() {let sky=prompt('The Sky color is blue?');
 
 switch(sky.toUpperCase()){
     case 'YES':
@@ -81,7 +81,8 @@ switch(sky.toUpperCase()){
         break;
     default:
         alert('It is not Correct');
-}
+}}
+sky();
 
 
 
