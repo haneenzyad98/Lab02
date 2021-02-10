@@ -122,7 +122,7 @@ numfinger();
 
 let Drink =['coffee','tea','cocacola', 'water','coldetea','cacaw'];
 
-    for(var x = 0; x < 6; x++){
+function drink() { for(var x = 0; x < 6; x++){
     let userAnswer = prompt('Guess the best drink for me?').toLowerCase();
         for (var j = 0; j < Drink.length; j++) {
             if( userAnswer === Drink[j]){
@@ -134,7 +134,8 @@ let Drink =['coffee','tea','cocacola', 'water','coldetea','cacaw'];
             break;}
             else{
             alert('Your Answer is incorrect, Try again');}
-    }
+    }}
+    drink();
 
 console.log(score)
 alert('score is ' + score);
