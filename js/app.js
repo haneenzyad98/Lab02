@@ -86,7 +86,7 @@ sky();
 
 
 
-let q6=prompt('what number of finger hand?')
+function numfinger () {let q6=prompt('what number of finger hand?')
 if(q6==5){
     score++;
     alert('it is correct')
@@ -96,7 +96,8 @@ if(q6==5){
     for(let i=0;(i<4)&&(q6!=5);i++ ){
         q6=prompt('what number of finger hand?')
     }alert('the correct answer is 5')
-}
+}}
+numfinger();
 
 // let Drink =['coffee','tea','cocacola', 'water'];
 // for(let x=0;x<4;x++){
