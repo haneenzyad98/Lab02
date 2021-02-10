@@ -32,7 +32,7 @@ if  (num.toLocaleLowerCase()==='yes'||num.toLocaleLowerCase()==='y'){
 } 
 quran();
 
-let houer=prompt('The number of hours of the day is 30?');
+function numDay () {let houer=prompt('The number of hours of the day is 30?');
 
 switch(houer.toUpperCase()){
     case 'NO':
@@ -47,7 +47,8 @@ switch(houer.toUpperCase()){
     default:
         alert('It is not Correct');
 }
-
+}
+numDay();
 
 let week=prompt('The number of days of the week is 5');
 
