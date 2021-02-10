@@ -7,7 +7,10 @@ age =prompt('How old are you?')
 alert('Hi'+ '  '+'' +Name+ '  ' +'answer the following question  by Yes or no please');
 let score=0;
 let continents;
-continents=prompt('Is the number of continents of the world 7?') 
+
+
+
+function conNumber () {continents=prompt('Is the number of continents of the world 7?') 
 if  (continents.toLocaleLowerCase()==='yes'||continents.toLocaleLowerCase()==='y'){
    score++; 
    alert('It is Correct');
@@ -15,18 +18,21 @@ if  (continents.toLocaleLowerCase()==='yes'||continents.toLocaleLowerCase()==='y
     alert('It is not Correct');
 }else{
     alert('the Correct answer is yes');
-}
+}}
+conNumber();
 
 
- let num=prompt('The number of parts of the Quran is 30?')
+function quran() {let num=prompt('The number of parts of the Quran is 30?')
 if  (num.toLocaleLowerCase()==='yes'||num.toLocaleLowerCase()==='y'){
     score++;
     alert('It is Correct');}
     else if(num.toLocaleLowerCase()==='no'||num.toLocaleLowerCase()==='n') {
         alert('It is not Correct');
     }
+} 
+quran();
 
-let houer=prompt('The number of hours of the day is 30?');
+function numDay () {let houer=prompt('The number of hours of the day is 30?');
 
 switch(houer.toUpperCase()){
     case 'NO':
@@ -41,9 +47,10 @@ switch(houer.toUpperCase()){
     default:
         alert('It is not Correct');
 }
+}
+numDay();
 
-
-let week=prompt('The number of days of the week is 5');
+function numWeek () {let week=prompt('The number of days of the week is 5');
 
 switch(week.toUpperCase()){
     case 'NO':
@@ -57,9 +64,10 @@ switch(week.toUpperCase()){
         break;
     default:
         alert('It is not Correct');
-}
+}}
+numWeek();
 
-let sky=prompt('The Sky color is blue?');
+function sky() {let sky=prompt('The Sky color is blue?');
 
 switch(sky.toUpperCase()){
     case 'YES':
@@ -73,11 +81,12 @@ switch(sky.toUpperCase()){
         break;
     default:
         alert('It is not Correct');
-}
+}}
+sky();
 
 
 
-let q6=prompt('what number of finger hand?')
+function numfinger () {let q6=prompt('what number of finger hand?')
 if(q6==5){
     score++;
     alert('it is correct')
@@ -87,7 +96,8 @@ if(q6==5){
     for(let i=0;(i<4)&&(q6!=5);i++ ){
         q6=prompt('what number of finger hand?')
     }alert('the correct answer is 5')
-}
+}}
+numfinger();
 
 // let Drink =['coffee','tea','cocacola', 'water'];
 // for(let x=0;x<4;x++){
@@ -112,7 +122,7 @@ if(q6==5){
 
 let Drink =['coffee','tea','cocacola', 'water','coldetea','cacaw'];
 
-    for(var x = 0; x < 6; x++){
+function drink() { for(var x = 0; x < 6; x++){
     let userAnswer = prompt('Guess the best drink for me?').toLowerCase();
         for (var j = 0; j < Drink.length; j++) {
             if( userAnswer === Drink[j]){
@@ -124,7 +134,8 @@ let Drink =['coffee','tea','cocacola', 'water','coldetea','cacaw'];
             break;}
             else{
             alert('Your Answer is incorrect, Try again');}
-    }
+    }}
+    drink();
 
 console.log(score)
 alert('score is ' + score);
