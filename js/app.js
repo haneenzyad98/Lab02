@@ -122,8 +122,9 @@ let Drink =['coffee','tea','cocacola', 'water','coldetea','cacaw'];
            }
         if (userAnswer === Drink[j]){
             break;}
+            
             else{
-            alert('Your Answer is incorrect, Try again');}
+                alert('Your Answer is incorrect, Try again');}
     }
 
 console.log(score)
