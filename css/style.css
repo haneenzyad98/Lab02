@@ -1,30 +1,55 @@
+
 h1 {
     font-size: 500%;
     text-align: center;
-    color:white;
-    margin: 50;
+    color:rgb(8, 0, 0);
+    margin: 10px;
     padding: 50px;
-    font-style: oblique;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .firstone{
     font-size: x-large;
     color: black;
-    padding: 20px;
+    padding: 10px;
+    background-color: #845ec2;
+    margin: 10px;
+    position:absolute;
+    margin-top: -20px;
 }
 .all{
     font-size: large;
     color: black;
     padding: 10px;
+    background-color: #ffcc29;
+    margin: 10px;
+    position:static;
 }
 body{
-    background-color:gray;
+    background-color:white;
 }
 header{
-    margin: 50px;
+    margin: 10px;
     height: min-content;
-    background-color:black;
+    /* background-color: #FFB6C1; */
 }
 h2{
     font-size: 30px;
 }
+body{
+    background-color: lightgray;
+}
+
+.firstone{
+
+/* font-family: 'Hanalei', cursive; */
+font-family: 'Source Code Pro', monospace;
+
+}
+.all{
+    font-family: 'Changa', sans-serif;
+}
+
+
+
+
